@@ -25,10 +25,11 @@ export const Title = styled.h1`
 
 export const Form = styled.form`
   width: 100%;
-  height: 40px;
+  height: 60px;
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 20px;
 `;
 
 export const Input = styled.input`

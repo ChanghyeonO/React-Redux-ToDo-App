@@ -1,12 +1,13 @@
 import React from "react";
-import { List, Button } from "./ToDoStyle";
+import { StyledLink, List, Button } from "./ToDoStyle";
 import { actionCreators } from "../../store";
 import { connect } from "react-redux";
 
-const ToDo = ({ text, onButtonClick }) => {
+const ToDo = ({ text, onButtonClick, id }) => {
   return (
     <List>
-      {text} <Button onClick={onButtonClick}>삭제</Button>
+      <StyledLink to={`/${id}`}>{text}</StyledLink>
+      <Button onClick={onButtonClick}>삭제</Button>
     </List>
   );
 };
