@@ -6,13 +6,14 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   width: 60%;
-  height: 1000px;
+  min-height: 800px;
   background-color: #999;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   border-radius: 30px;
+  overflow: auto;
 `;
 
 export const Title = styled.h1`
@@ -29,7 +30,6 @@ export const Form = styled.form`
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 20px;
 `;
 
 export const Input = styled.input`
@@ -52,4 +52,6 @@ export const Button = styled.button`
 export const ListArea = styled.div`
   width: 100%;
   height: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 `;
